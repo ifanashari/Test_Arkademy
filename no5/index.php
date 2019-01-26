@@ -44,7 +44,6 @@
         $words = $_POST['words'];
         $letterTarget = $_POST['letterTarget'];
         
-        // nama function
         function checkLetter($word, $letter)
         {
           if($word != "" && $letter != ""){

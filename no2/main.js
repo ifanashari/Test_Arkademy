@@ -1,4 +1,4 @@
-$("#username").on("keyup", () => {
+function usernameChecker() {
   var username = escape(document.getElementById("username").value);
   var usernameArray = username.split("");
   console.log(usernameArray);
@@ -34,4 +34,8 @@ $("#username").on("keyup", () => {
   } else {
     $("#helpId").html("Minimal 8 karakter");
   }
+}
+
+$("#username").on("keyup", () => {
+  usernameChecker();
 });
