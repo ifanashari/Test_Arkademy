@@ -14,3 +14,4 @@ function returnData() {
 }
 
 document.getElementById("returnJson").innerHTML = returnData();
+console.log(returnData);
